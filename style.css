@@ -48,6 +48,7 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   flex-direction: column;
+  color: white;
 }
 
 .output .previous-operand {
@@ -59,4 +60,9 @@ body {
 .output .current-operand {
   color: white;
   font-size: 2rem;
+}
+
+.temp-result {
+  text-align: left;
+  width: 100%;
 }
