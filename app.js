@@ -94,3 +94,60 @@ clearLastNum.addEventListener('click', (e) => {
   display2.innerText = '';
   display2Num = '';
 });
+
+window.addEventListener('keydown', (e) => {
+  if(
+    e.key === '0' ||
+    e.key === '1' ||
+    e.key === '2' ||
+    e.key === '3' ||
+    e.key === '4' ||
+    e.key === '5' ||
+    e.key === '6' ||
+    e.key === '7' ||
+    e.key === '8' ||
+    e.key === '9' ||
+    e.key === '.' 
+  ){
+    clickButton(e.key);
+
+  }else if(
+    e.key === '-' ||
+    e.key === '/' ||
+    e.key === '+' ||
+    e.key === '%'
+  ){
+    clickButtonOp(e.key);
+
+  }else if(e.key === '*'){
+    clickButtonOp('x');
+  }else if(e.key === '=' || e.key === 'Enter'){
+    clickEqualBtn(e.key);
+  }
+});
+
+function clickButton(key){
+  numberBtn.forEach(button =>  {
+    if(button.innerText === key){
+      button.click();
+    }
+  })
+}
+
+
+function clickButtonOp(key){
+  operetorBtn.forEach(button =>  {
+    if(button.innerText === key){
+      button.click();
+    }
+  })
+}
+
+function clickEqualBtn(key){
+      equalBtn.click();
+  }
+
+
+
+
+
