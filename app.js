@@ -121,8 +121,8 @@ window.addEventListener('keydown', (e) => {
 
   }else if(e.key === '*'){
     clickButtonOp('x');
-  }else if(e.key === '=' || e.key === 'Enter'){
-    clickEqualBtn(e.key);
+  }else if(e.key === '='){
+    clickEqualBtn();
   }
 });
 
@@ -145,7 +145,8 @@ function clickButtonOp(key){
 
 function clickEqualBtn(key){
       equalBtn.click();
-  }
+    }
+
 
 
 
